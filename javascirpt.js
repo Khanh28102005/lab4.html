@@ -15,3 +15,4 @@ function selectCourse(course) {
         selectedOption.classList.add('selected');
     }
 }
+
