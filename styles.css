@@ -1,0 +1,252 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Nền sáng cho toàn bộ trang */
+}
+
+header {
+    background-color: #ffffff; /* Nền thanh công cụ màu trắng */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho thanh công cụ */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+nav ul li:hover {
+    color: #007BFF; /* Màu thay đổi khi hover */
+}
+
+.divider {
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Dòng kẻ mờ */
+    margin-top: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Nền trắng cho thông tin người dùng */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+    margin: 15px; /* Khoảng cách với viền bên ngoài */
+    border-radius: 5px; /* Bo góc cho khung */
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.text-info {
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tăng kích thước tiêu đề h1 */
+}
+
+h2 {
+    font-size: 2em; /* Tăng kích thước tiêu đề h2 */
+}
+
+.edit-info {
+    cursor: pointer;
+    color: #007BFF; /* Màu chữ */
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.weekly-streak {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20px 15px;
+    position: relative;
+    background-color: #ffffff; /* Nền bên trong màu trắng */
+    padding: 20px; /* Padding cho khung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+}
+
+.weekly-streak-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.streak-info {
+    flex-grow: 1;
+}
+
+.see-all-activity,
+.my-learning {
+    background-color: transparent;
+    border: none;
+    color: #007BFF; /* Màu chữ */
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.see-all-activity {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.pick-up-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px; /* Khoảng cách với viền */
+}
+
+.my-learning {
+    margin-left: 10px;
+}
+
+.courses-toolbar {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 15px;
+}
+
+.course-option {
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.course-option:hover {
+    color: #007BFF; /* Thay đổi màu khi hover */
+}
+
+.course-option.selected {
+    font-weight: bold;
+}
+
+.course-option.selected::after {
+    content: '';
+    display: block;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+
+.image-item {
+    display: flex;
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.2s;
+    overflow: hidden;
+    background-color: #ffffff; /* Nền trắng cho từng item */
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.image-item img {
+    width: 100%; /* Giữ tỉ lệ hình ảnh */
+    height: auto;
+}
+
+.description {
+    padding: 10px;
+    text-align: left;
+    background-color: #f9f9f9; /* Nền sáng cho mô tả */
+}
+
+.recommendation-title {
+    display: flex;
+    align-items: center;
+    margin: 20px 15px;
+}
+
+.recommendation-title h2 {
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.edit-interests {
+    background-color: transparent;
+    border: none;
+    color: #007BFF; /* Màu chữ */
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recommended-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+
+.recommended-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.star-rating {
+    font-size: 20px;
+    color: gold;
+}
+.star-rating {
+    color: black; /* Màu cho số sao và tổng số người đánh giá */
+}
+
+.star {
+    color: gold; /* Màu vàng cho các sao */
+}
+
+.star-rating-number {
+    color: black; /* Màu đen cho số sao */
+}
+
+.rating-count {
+    color: black; /* Màu đen cho tổng số người đánh giá */
+}
+
+

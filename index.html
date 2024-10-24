@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Business Operations</li>
+                <li>Cloud Computing</li>
+                <li>Cybersecurity</li>
+                <li>Data Science</li>
+                <li>Development</li>
+                <li>IT Operations</li>
+                <li>Language Learning</li>
+                <li>Leadership & Management</li>
+                <li>Marketing</li>
+            </ul>
+        </nav>
+        <div class="divider"></div>
+    </header>
+
+    <main>
+        <div class="user-info">
+            <div class="logo">A</div>
+            <div class="text-info">
+                <h1>Welcome back, Khanh Nguyen</h1>
+                <p class="edit-info">Add your profession and interests</p>
+            </div>
+        </div>
+
+        <div class="weekly-streak">
+            <div class="weekly-streak-content">
+                <div class="streak-info">
+                    <h2>Weekly Streak</h2>
+                    <p>One ring down, one to go. Keep it up!</p>
+                </div>
+                <div class="time-active">Active Time: 00:00:00</div>
+            </div>
+            <button class="see-all-activity">See All Activities</button>
+        </div>
+
+        <div class="pick-up-container">
+            <h2 class="video-section-title">Continue from where you left off</h2>
+            <button class="my-learning">My Learning</button>
+        </div>
+
+        <div class="courses-toolbar">
+            <div class="course-option" onclick="selectCourse('Courses')">Courses</div>
+            <div class="course-option" onclick="selectCourse('Learning Path')">Learning Path</div>
+            <div class="course-option" onclick="selectCourse('Certification Preparation')">Certification Preparation</div>
+            <div class="divider"></div>
+        </div>
+
+        <section class="image-gallery">
+            <div class="image-item" onclick="window.location.href='https://youtu.be/EoZbufb1DpA?si=EdUaBheAmsUnhPWm'">
+                <img src="https://i.imgur.com/Nps4BUZ.png" alt="Video 1">
+                <div class="description">
+                    <p>CSS cho phần thông báo | Header notification CSS - Phần 1</p>
+                </div>
+            </div>
+            <div class="image-item" onclick="window.location.href='https://youtu.be/-jV06pqjUUc?si=l8YDRVThujC53wiK'">
+                <img src="https://i.imgur.com/4yfTWTn.png" alt="Video 2">
+                <div class="description">
+                    <p>Lời khuyên trước khóa học | Lộ trình khóa học JavaScript cơ bản</p>
+                </div>
+            </div>
+            <div class="image-item" onclick="window.location.href='https://youtu.be/1GehwGsTC4M?si=TbFUIZWJPguMCkRn'">
+                <img src="https://i.imgur.com/NAlGEE0.png" alt="Video 3">
+                <div class="description">
+                    <p>Move to Gitlab (from Github) | Git Siêu Dễ Cho Beginners Từ A Đến Z</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="recommendation-title">
+            <h2>Based on your learning progress, we recommend:</h2>
+            <button class="edit-interests">Edit Learning Interests</button>
+        </div>
+        
+        <div class="recommended-items">
+            <div class="recommended-item">
+                <img src="https://i.imgur.com/rh9IGb4.png" alt="Course 1">
+                <p class="description">RESPONSIVE WEB DESIGN: MASTER THE SKILLS TO CREATE WEBSITES THAT LOOK GREAT ON ALL DEVICES.</p> 
+                <div class="star-rating">
+                    <span class="star-rating-number">4</span> 
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="rating-count">(12 reviews)</span>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="https://i.imgur.com/7AFBXq4.png" alt="Course 2">
+                <p class="description">PYTHON FOR DATA SCIENCE: LEARN HOW TO USE PYTHON FOR DATA ANALYSIS AND VISUALIZATION.</p>
+                <div class="star-rating">
+                    <span class="star-rating-number">5</span> 
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="rating-count">(30 reviews)</span>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="https://i.imgur.com/tAcHK4b.png" alt="Course 3">
+                <p class="description">JAVASCRIPT FOR BEGINNERS: START YOUR JOURNEY IN PROGRAMMING WITH JAVASCRIPT FUNDAMENTALS.</p>
+                <div class="star-rating">
+                    <span class="star-rating-number">3</span> 
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="rating-count">(18 reviews)</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
