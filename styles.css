@@ -248,5 +248,18 @@ h2 {
 .rating-count {
     color: black; /* Màu đen cho tổng số người đánh giá */
 }
+.star-rating {
+    font-size: 16px; /* Kích thước cho đánh giá sao */
+    color: gold;
+    margin-top: 5px; /* Khoảng cách trên cho phần đánh giá */
+}
 
+.star-rating-number {
+    color: black; /* Màu đen cho số sao */
+    margin-right: 5px; /* Khoảng cách bên phải cho số sao */
+}
 
+.rating-count {
+    color: black; /* Màu đen cho tổng số người đánh giá */
+    margin-left: 5px; /* Khoảng cách bên trái cho tổng số người đánh giá */
+}
